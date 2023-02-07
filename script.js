@@ -128,11 +128,11 @@ else if(snameNoVowels.length<3){
     snamedata[2]=snameWithVowels[0];
 }
 if(snamestr.length<3){
-    for(let i =0;i<3;i++){
-        snamedata[i]=snamestr[i];
+    for(let i =0;i<2;i++){
+        snamedata[i]=snameNoVowels[i];
         
     }
-  
+    snamedata[1]=snameWithVowels[0];
     snamedata[2]='X';
 }
 
@@ -151,14 +151,14 @@ else if(fnameNoVowels.length<3){
     }
     fnamedata[2]=fnameWithVowels[0];
 }
- if(fnamestr.length<3){
+if(fnamestr.length<3){
     for(let i =0;i<2;i++){
-        fnamedata[i]=fnamestr[i];
-      
+        fnamedata[i]=fnameNoVowels[i];
+        
     }
+    fnamedata[1]=fnameWithVowels[0];
     fnamedata[2]='X';
 }
-
 
 
 
